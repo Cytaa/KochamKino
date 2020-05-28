@@ -34,6 +34,7 @@ public class DataLoader {
             Director director3 = new Director("James", "Cameron");
             Director director4 = new Director("Jas", "Fasola");
             Director director5 = new Director("Christopher", "Nolan");
+            Director director6 = new Director("Stephen", "Spillberg");
             Movie movie = new Movie("Avatar","Fantasy", director3, 2012);
             Movie movie1 = new Movie("Harry Potter","Fantasy", director, 2001);
             Movie movie2 = new Movie("Pit","Thriller", director2, 2002);
@@ -43,6 +44,8 @@ public class DataLoader {
             Movie movie6 = new Movie("Batman: Begins", "Action",director5 ,2005);
             Movie movie7 = new Movie("Batman: The Dark Knight", "Action", director5, 2008);
             Movie movie8 = new Movie("Batman: The Dark Knight Rises", "Action", director5, 2012);
+            Movie movie9 = new Movie("Jurassic Park", "Action", director6, 1993);
+
 
 
             //Grade grade = new Grade(10, user, movie1);
@@ -60,12 +63,14 @@ public class DataLoader {
             directorRep.save(director3);
             directorRep.save(director4);
             directorRep.save(director5);
+            directorRep.save(director6);
             movieRepo.save(movie3);
             movieRepo.save(movie4);
             movieRepo.save(movie5);
             movieRepo.save(movie6);
             movieRepo.save(movie7);
             movieRepo.save(movie8);
+            movieRepo.save(movie9);
 
 
 
