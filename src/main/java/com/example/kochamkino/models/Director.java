@@ -1,13 +1,11 @@
 package com.example.kochamkino.models;
 
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 
 import javax.persistence.*;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 @Entity
@@ -48,10 +46,6 @@ public class Director{
         getMovies().remove(movie);
         movie.setDirector(null);
     }
-
-
-
-
     public Director(){}
 
     public Director(String firstName, String lastName){

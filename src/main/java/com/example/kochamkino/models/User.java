@@ -1,7 +1,5 @@
 package com.example.kochamkino.models;
 
-
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

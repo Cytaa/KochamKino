@@ -63,6 +63,14 @@ public class PagesController {
 
     }
 
+    @PostMapping("/deleteGrade")
+    public RedirectView deleteGrade(Long id){
+        System.out.println(id);
+        gradesService.deleteGrade(id);
+
+        return new RedirectView("/home");
+    }
+
     @GetMapping("/rated")
     public String showRatedMovies(Model model) {
 

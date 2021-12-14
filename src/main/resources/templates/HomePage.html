@@ -48,6 +48,11 @@
                         <input type="submit" value="Ocen">
                     </div>
                 </div>
+
+            </form>
+            <form th:action="@{/deleteGrade}" th:method="post">
+                <input type="hidden" name="id" th:value="${movie.movieId}">
+                <button type="submit">Usun</button>
             </form></td>
         </tr>
 
